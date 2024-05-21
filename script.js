@@ -63,4 +63,11 @@ $(function () {
   });
 });
 
+// Sortable interaction
+$(function () {
+  $('#skills-list').sortable({
+    placeholder: 'ui-state-highlight',
+  });
+});
+
 formEl.on('submit', handleFormSubmit);
