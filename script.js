@@ -28,4 +28,31 @@ const handleFormSubmit = function (event) {
   dateInputEl.val('');
 };
 
+// Autocomplete widget
+$(function () {
+  const skillNames = [
+    'Bootstrap',
+    'C',
+    'C++',
+    'CSS',
+    'Express.js',
+    'Git',
+    'HTML',
+    'Java',
+    'JavaScript',
+    'jQuery',
+    'JSON',
+    'PostgreSQL',
+    'Node.js',
+    'NoSQL',
+    'PHP',
+    'Python',
+    'React',
+    'Ruby',
+  ];
+  $('#skill-name').autocomplete({
+    source: skillNames,
+  });
+});
+
 formEl.on('submit', handleFormSubmit);
